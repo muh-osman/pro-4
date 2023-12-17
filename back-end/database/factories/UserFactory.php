@@ -11,24 +11,29 @@ use Illuminate\Support\Str;
  */
 class UserFactory extends Factory
 {
-    protected static ?string $password;
-
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+    public function definition()
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'name' => "admin",
+            'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'role' => '1995',
+            'password' => Hash::make('admin123$%'), // password
             'remember_token' => Str::random(10),
         ];
     }
 
+    public function withToken()
+    {
+        return $this->afterCreating(function ($user) {
+            $user->createToken('token')->accessToken;
+        });
+    }
     /**
      * Indicate that the model's email address should be unverified.
      */
