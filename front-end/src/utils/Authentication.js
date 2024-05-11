@@ -3,7 +3,7 @@ import { useEffect } from "react";
 // Cookie
 import Cookie from "cookie-universal";
 // React router
-import { Outlet, useNavigate, redirect } from "react-router-dom";
+import { Outlet, useNavigate, Navigate } from "react-router-dom";
 // API
 import api from "./api";
 //
@@ -35,5 +35,5 @@ export default function Authentication() {
     fetchData();
   }, [token, navigate]);
 
-  return !token ? <redirect to="/login" /> : <Outlet />;
+  return !token ? <Navigate to="/login" /> : <Outlet />;
 }

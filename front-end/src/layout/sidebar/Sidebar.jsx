@@ -165,6 +165,52 @@ export default function Sidebar() {
             Add Category
           </NavLink>
         </li>
+
+        <li>
+          <NavLink
+            to="products"
+            style={{ display: "flex", alignItems: "center" }}
+            className="nav-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={16}
+              height={16}
+              fill="currentColor"
+              className="bi bi-box-fill me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"
+              />
+            </svg>
+            Products
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="product/add"
+            style={{ display: "flex", alignItems: "center" }}
+            className="nav-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={16}
+              height={16}
+              fill="currentColor"
+              className="bi bi-bag-plus-fill me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z"
+              />
+            </svg>
+            Add product
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

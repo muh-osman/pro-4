@@ -5,7 +5,7 @@ import style from "./Users.module.scss";
 // Icons
 import { FaTrashCan, FaPenToSquare } from "react-icons/fa6";
 // Me(Axios)
-import api from "../../../utils/api";
+import api from "../../utils/api";
 // Cookie
 import Cookie from "cookie-universal";
 // React router

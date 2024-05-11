@@ -6,7 +6,7 @@ import Dashboard from "./pages/Dashboard/Dashboard"
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/LogIn/LogIn";
 import Home from "./pages/Home/Home";
-import Users from "./pages/Dashboard/Users/Users";
+import Users from "./pages/Users/Users";
 import Edit from "./pages/Edit/Edit";
 import AddUser from "./pages/AddUser/AddUser";
 import Err403 from "./pages/403/Err403";
@@ -16,6 +16,8 @@ import Err404 from "./pages/Err404/Err404";
 import Categories from "./pages/Categories/Categories";
 import AddCategory from "./pages/AddCategory/AddCategory";
 import EditCategory from "./pages/EditCategory/EditCategory";
+import Products from "./pages/Products/Products";
+import AddProduct from "./pages/AddProduct/AddProduct";
 // Utils
 import Authentication from "./utils/Authentication";
 import AdminAuthorization from "./utils/AdminAuthorization";
@@ -23,6 +25,8 @@ import UserAuthorization from "./utils/UserAuthorization";
 import WriterAuthorization from "./utils/WriterAuthorization";
 import HideAuth from "./utils/HideAuth";
 import CategoriesAuthorization from "./utils/CategoriesAuthorization";
+
+
 
 
 
@@ -63,6 +67,10 @@ export default function App() {
                           <Route path="categories" element={<Categories />} />
                           <Route path="categories/:id" element={<EditCategory />} />
                           <Route path="category/add" element={<AddCategory />} />
+
+                          <Route path="products" element={<Products />} />
+                          {/* <Route path="products/:id" element={< />} /> */}
+                          <Route path="product/add" element={<AddProduct />} />
                       </Route>
 
                   </Route>

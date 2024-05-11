@@ -1,0 +1,31 @@
+.container{
+    padding: 16px;
+    width: 100%;
+
+    img {
+        width: 75px;
+    }
+
+    .image_box {
+        display: flex;
+        gap: 16px;
+        // border: 1px solid #cacaca;
+        // border-radius: 9px;
+        padding: 16px;
+        margin-bottom: 16px;
+
+        .span_box {
+
+            width: 100%;
+
+            span {
+                display: inline-block;
+                height: 10px;
+                width: 100%;
+                background-color: skyblue;
+            }
+        }
+
+
+    }
+}
